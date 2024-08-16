@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-nguyentour</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="formLogin">
+            <h1 class="login">Login</h1>
+        
+            <div  class="form">
+                <input  style=" background: transparent;border: 0;outline: 0;color: #f5f5f5; flex-grow: 1;" id="email" type="email"  placeholder="email">
+                <!-- <div id="emailError" style="color: red; display: none;">Ten khong duoc de trong</div> -->
+            </div>
+             <div class="form">
+                <input  style=" background: transparent;border: 0;outline: 0;color: #c71b1b; flex-grow: 1;" id="password" type="password"  placeholder="Mật khẩu">   <span id ="eye"><i class="fa-solid fa-eye"></i></span>
+            </div> 
+            
+           
+            <div id="alertError" style="display: none; color: red;">tai khooan hoac mat khau khong dung</div>
+            <input type="submit" value="Đăng nhập" class="form-submit">
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="/js/login.js"></script>
+</body>
+
+
+</html>

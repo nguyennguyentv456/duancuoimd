@@ -97,15 +97,35 @@
     display: flex;
     flex-wrap: wrap;
 }
-.all .tang2  div{
+.all .tang2  li{
   list-style: none;
   display: flex;
-  margin: 0px 25px;
+  margin: 0px 10px;
   padding-left: 60px;
 }
-.all .tang2  div a {
+.all .tang2  li a {
     color: black;
     text-decoration: none;
+}
+.tang2 li .sub-menu{
+    position: absolute;
+    background-color: rgb(233, 238, 244);
+    margin-top: 20px;
+    padding: 2px 5px;
+    list-style: none;
+    width: 200px;
+    height: auto;
+    display: none;
+}
+.tang2 li:hover .sub-menu {
+   display: block;
+}
+.tang2  .sub-menu li a{
+    
+    margin-right: 20px;
+}
+.tang2.sub-menu li:last-child a{
+    border: none;
 }
 .all .hr{
     width: 100%;
@@ -114,7 +134,7 @@
 .tang3{
  width: 120%;
 
- background-image: url("halong.jpg");
+ background-image: url("/img/halong.jpg");
  height: 500px;
  
  background-repeat: no-repeat;
@@ -187,11 +207,29 @@
     object-fit: cover;
     object-position: center;
 }
+#list1 .so .danhgia{
+    display: flex;
+    align-items: center;
+    
+}
+#list1 .so .danhgia img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+
+}
+#list1 .so .danhgia .po{
+    margin-top: 200px;
+}
 #list1 .so .name{
     text-align: center;
     color:black;
     font-weight: bold;
     max-width: 21px;
+    margin-top: 20px;
 }
 #sp button{
    width: 100px;
